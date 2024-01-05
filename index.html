@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Teams Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Thasadith:700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="generator">
+        <h1>
+            <span>Random Teams</span> Generator <p class="header">~ by Saiyam Kumar.</p>
+        </h1>
+        <form id="form">
+            <div>
+                <label class="method-label method-2" for="teams-labels">Teams' Names</label>
+                <p>one per line or comma separated (as shown)</p>
+                <textarea id="teams-labels" cols="20" rows="2" name="teams-labels" autofocus>Team1,Team2</textarea>
+            </div>
+            <div class="members">
+                <label for="teams-members">Members' Names</label>
+                <p>one per line or comma separated (as shown)</p>
+                <textarea id="teams-members" cols="20" rows="5"
+                    name="teams-members">Divyanshi, Saiyam, Charan, Abhineet, Mankirat, Madhav, Himang, Amit</textarea>
+            </div>
+            <button type="submit" id="submit" class="submit">Go!</button>
+        </form>
+        <div class="results" id="results">
+            <div class="finalteams" id="finalteams"></div>
+            <button class="copy" type="button" id="copy">copy</button>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
